@@ -1,26 +1,23 @@
-# SGCPro
-"Python implementation of Rule-Boosted SGC-Pro for SDSS spectra classification."
+# SGCPro-Spectral-Analyze
 
-# SGCPro
-
-Python implementation of **Rule-Boosted SGC-Pro** for SDSS spectra classification.
+**Rule-Boosted Spectral Galaxy Classifier (SGC-Pro)** for **SDSS** spectra.  
+Classifies spectra into **AGN galaxies**, **star-forming galaxies**, **stars (G/K types)**, or **nebulae** using astrophysical rules and line-ratio diagnostics — **no ML**.
 
 ---
 
-## 📌 Overview
-This project provides a tool to classify SDSS (Sloan Digital Sky Survey) spectra into different astrophysical object categories such as:
-- AGN Galaxy
-- G-type Star
-- K-type Star
-- Star-forming Galaxy
-
-The method uses a **rule-boosted approach** with global τ parameters for more robust classification.
+## Features
+- Auto-retrieval of SDSS spectra with valid subclasses  
+- Continuum removal & Savitzky–Golay smoothing  
+- Redshift estimation via line matching  
+- Emission/absorption line measurement  
+- Rule-based classification (BPT-like diagnostics)  
+- SGC code generation from emission-peak spacings  
+- Evaluation: confusion matrix, precision, recall, F1  
 
 ---
 
-## ⚙️ Installation
-
-Clone the repository:
+## Installation
 ```bash
 git clone https://github.com/Alisinalessani/SGCPro.git
 cd SGCPro
+pip install -r requirements.txt
