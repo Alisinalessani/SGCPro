@@ -1,5 +1,0 @@
-astroquery
-astropy
-scipy
-pandas
-tqdm
